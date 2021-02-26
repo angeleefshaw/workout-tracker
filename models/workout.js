@@ -6,15 +6,44 @@ const WorkoutSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    exercises: {
-        type: String,
-        name: String,
-        duration: Number,
-        weight: Number,
-        reps: Number,
-        set: Number
-    }
+    exercises: [{
+        type: {
+            type: String,
+            trim: true,
+            required: "String is required."
+        },
+        name: {
+            type: String,
+            trim: true,
+            required: "String is required."
+        }, 
+        duration: {
+            type: Number,
+            unique: true,
+            required: true
+        },
+        weight: {
+            type: Number,
+            unique: true,
+            required: true
+        },
+        reps: {
+            type: Number,
+            unique: true,
+            required: true
+        },
+        set: {
+            type: Number,
+            unique: true,
+            required: true
+        } 
+    }]
 })
+
+
+//WorkoutSchema.methods.getStats= function() {};
+
+//WorkoutSchema.methods.combineWeight = function() {};
 
 const Workout = mongoose.model("Workout", WorkoutSchema);
 
