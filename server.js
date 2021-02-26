@@ -18,8 +18,10 @@ app.use(express.static("public"));
 
 mongoose.connect( "mongodb://localhost/workout", { useNewUrlParser: true });
 
+
+
 //html routes
-app.get("/", function (req, res) {
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + '/../public/views/index.html'));
 });
 
@@ -32,15 +34,6 @@ app.get("/stats", (req, res) => {
 })
 
 
-// app.get("/exercise", (req, res) => {
-//   db.Workout.find({})
-//     .then(dbWorkout => {
-//       res.json(dbWorkout);
-//     })
-//     .catch(err => {
-//       res.json(err);
-//     });
-// });
 
 //api routes
 app.get("/api/workouts", (req, res) => {
