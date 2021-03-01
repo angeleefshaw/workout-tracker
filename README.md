@@ -15,7 +15,7 @@
   ## Usage
   ![Workout](./imgs/mainpage.png)
   
-  Add workouts or continue previous workout from the main page displayed above. Click on the blue button to continue current workokut. Click on the red button to start a new workout. 
+  Add workouts or continue a previous workout from the main page displayed above. Click on the blue button to continue a current workokut. Click on the red button to start a new workout. 
   
   ![Exercise](./imgs/addex.png)
   
