@@ -29,6 +29,8 @@
   ## Questions
   
   GITHUB: https://github.com/angeleefshaw
+  -----
   EMAIL: angeleefshaw@gmail.com
+  -----
   LINKEDIN: https://www.linkedin.com/in/angelee-shaw-2a65861bb/
   
